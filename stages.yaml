@@ -1,0 +1,10 @@
+# Define the stages and their dependencies of a data pipeline in a human-friendly way
+Lint: []
+Test: []
+Coverage:
+  - Test
+Docs:
+  - Coverage
+  - Lint
+Benchmark:
+  - Coverage
