@@ -57,8 +57,11 @@ Test: SUCCESS
 You can see above that the Benchmark stage has not yet been executed, the Coverage stage has failed, the Docs stage has not yet been executed, the Lint stage has succeeded, and the Test stage has succeeded.
 
 ## Usage
+1. Write your stages or jobs as python functions within the file foo_jobs.py. One function per job.
 
-Execute the following command to run the pipeline:
+2. Define the sequence of the stages on the stages.yaml file. Here you define if jobs are run sequentialy or concurrently.
+
+3. Execute the following command to run the pipeline:
 
 ```bash
 python foo_pipeline.py
